@@ -1,0 +1,6 @@
+@Mission_11Hair.API_HostAddress = http://localhost:5118
+
+GET {{Mission_11Hair.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
