@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9094297f02924b192d2403bb015e357a2460013")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

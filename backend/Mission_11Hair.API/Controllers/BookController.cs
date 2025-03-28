@@ -15,15 +15,22 @@ namespace Mission_11Hair.API.Controllers
         }
 
         [HttpGet("AllBooks")]
-        public IActionResult GetBooks(int pageSize = 10, int pageNum = 1)
+        public IActionResult GetBooks(int pageSize = 10, int pageNum = 1, [FromQuery(Name = "category")] List<string> categories = null)
         {
+                var query = _bookContext.Books.AsQueryable();
 
-            var something = _bookContext.Books
+                // Filter by categories if any are selected
+                if (categories != null && categories.Any())
+                {
+                    query = query.Where(b => categories.Contains(b.Category));
+                }
+
+            var totalNumBooks = query.Count();
+
+            var something = query
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();
-
-            var totalNumBooks = _bookContext.Books.Count();
 
             var someObject = new
             {
@@ -31,6 +38,17 @@ namespace Mission_11Hair.API.Controllers
                 totalNumBooks = totalNumBooks
             };
             return Ok(someObject);
+        }
+
+        [HttpGet("GetBookCategories")]
+        public IActionResult GetBookCategories()
+        {
+            var Category = _bookContext.Books
+                .Select(p => p.Category)
+                .Distinct()
+                .ToList();
+
+            return Ok(Category);
         }
     }
 }
