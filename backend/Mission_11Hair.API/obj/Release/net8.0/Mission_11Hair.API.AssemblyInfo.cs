@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3efe2d72736d1a0b35c88edf3526f05b156693e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c872bd8045a07140611ca9968cc25fe9832eb874")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission_11Hair.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
