@@ -47,7 +47,7 @@ const CartSummary = () => {
           {totalItems}
           <span className="visually-hidden">items in cart</span>
         </span>
-        <strong>${totalAmount.toFixed(2)}</strong>
+        <strong>${totalAmount.toFixed(2)}</strong> 
         <span
           style={{
             marginLeft: "8px",

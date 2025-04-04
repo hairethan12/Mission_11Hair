@@ -1,10 +1,10 @@
 import "./App.css";
-import BookList from "./components/BookList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import BooksPage from "./pages/BooksPage";
 import BuyPage from "./pages/BuyPage";
 import CartPage from "./pages/CartPage";
+import AdminBooksPage from "./pages/AdminBookPage";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             <Route path="/books" element={<BooksPage />} />
             <Route path="/buy/:title/:bookId/:price" element={<BuyPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/adminbooks" element={<AdminBooksPage />} />
           </Routes>
         </Router>
       </CartProvider>
