@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/a338b33e-b62b-4000-8727-1539dfbd5885/resourceGroups/appsvc_windows_eastus/providers/Microsoft.Web/sites/Mission13-Hair-Backend",
+  "appService.deploySubpath": "backend\\Mission_11Hair.API\\publish"
+}
